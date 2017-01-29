@@ -1,0 +1,31 @@
+{
+  "name": "liriapp",
+  "version": "1.0.0",
+  "description": "rutgers coding bootcamp project",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcharner/HW8Liri.git"
+  },
+  "keywords": [
+    "twitter",
+    "spotify",
+    "omdb",
+    "node",
+    "js"
+  ],
+  "author": "kristac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcharner/HW8Liri/issues"
+  },
+  "homepage": "https://github.com/kcharner/HW8Liri#readme",
+  "dependencies": {
+    "request": "^2.79.0",
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  }
+}
