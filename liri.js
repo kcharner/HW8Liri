@@ -46,15 +46,15 @@ if (userAction === "movie-this") {
 	omdbRequest("http://www.omdbapi.com/?t=titanic&y=&plot=short&r=json&tomatoes=true", function (error, response, body) {
 	  	if (!error && response.statusCode == 200) {
 	    console.log(JSON.parse(body));
-	    console.log("Movie Title: " + body.title);
-	    console.log("Year: " + body.year);
-	    console.log("IMDB Rating: " + body.Year);
-	    console.log("Country: " + body.Year);
-	    console.log("Language: " + body.Year);
-	    console.log("Plot: " + body.Year);
-	    console.log("Starring: " + body.Year);
-	    console.log("Rotten Tomatoes Rating: " + body.Year);
-	    console.log("Rotten Tomatoes URL: " + body.Year);
+	    console.log("Movie Title: " + body.Title);
+	    console.log("Year: " + body.Year);
+	    // console.log("IMDB Rating: " + body.);
+	    // console.log("Country: " + body.);
+	    // console.log("Language: " + body.);
+	    // console.log("Plot: " + body.);
+	    // console.log("Starring: " + body.);
+	    // console.log("Rotten Tomatoes Rating: " + body.);
+	    // console.log("Rotten Tomatoes URL: " + body.);
 	  	}
 	})
 }
