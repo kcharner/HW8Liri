@@ -29,7 +29,10 @@ var spotify = require("Spotify");
 if (userAction === "spotify-this-song") {
 	spotify.search({ type: 'track', query: userQuery }, function(err, data) {
 		if ( !err ) {
-		        console.log(data.tracks.items[0].artists);
+		        console.log("Artist: " + data.tracks.items[0].artists.name); //need help w/ this one
+		        console.log("Album: " + data.tracks.items[0].album.name);
+		        console.log("Song Title: " + data.tracks.items[0].name);
+		        console.log("Listen to a preview: " + data.tracks.items[0].preview_url);
 		}
 	});
 
@@ -40,9 +43,18 @@ if (userAction === "spotify-this-song") {
 var omdbRequest = require("request");
 
 if (userAction === "movie-this") {
-	omdbRequest("http://www.omdbapi.com/?t=" + userQuery + "&y=&plot=short&r=json&tomatoes=true", function (error, response, body) {
+	omdbRequest("http://www.omdbapi.com/?t=titanic&y=&plot=short&r=json&tomatoes=true", function (error, response, body) {
 	  	if (!error && response.statusCode == 200) {
 	    console.log(JSON.parse(body));
+	    console.log("Movie Title: " + body.title);
+	    console.log("Year: " + body.year);
+	    console.log("IMDB Rating: " + body.Year);
+	    console.log("Country: " + body.Year);
+	    console.log("Language: " + body.Year);
+	    console.log("Plot: " + body.Year);
+	    console.log("Starring: " + body.Year);
+	    console.log("Rotten Tomatoes Rating: " + body.Year);
+	    console.log("Rotten Tomatoes URL: " + body.Year);
 	  	}
 	})
 }
@@ -64,7 +76,7 @@ if (userAction === "do-what-it-says") {
 
 
 
-
+// + userQuery +
 
 
 
